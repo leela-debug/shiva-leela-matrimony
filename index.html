@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiva Leela Elite Matrimony | Kamma Community</title>
+<meta name="description" content="Shiva Leela Elite Matrimony offers personalised matchmaking for the Kamma community across India and overseas.">
+<style>
+:root {
+  --wine: #641d32;
+  --gold: #c49a50;
+  --cream: #fffaf2;
+  --ink: #29201f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--cream);
+}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+header {
+  background: #fffdf8;
+  padding: 17px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #eadcc6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand { color: var(--wine); font-size: 23px; font-weight: bold; }
+.brand small {
+  display: block; font: 10px Arial, sans-serif;
+  color: var(--gold); letter-spacing: 3px; margin-top: 5px;
+}
+nav { display: flex; gap: 22px; align-items: center; }
+nav a { font: 13px Arial, sans-serif; }
+nav a:hover { color: var(--gold); }
+.btn {
+  display: inline-block;
+  padding: 13px 21px;
+  background: var(--wine);
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font: 13px Arial, sans-serif;
+  transition: .2s;
+}
+.btn:hover { background: #842d47; transform: translateY(-1px); }
+.btn.gold { background: var(--gold); color: #241712; }
+.hero {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 30px;
+  padding: 65px 7%;
+  background: linear-gradient(120deg,#fffaf2 50%,#f0e0c9 100%);
+}
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 3px;
+  color: #987037; font: 11px Arial, sans-serif;
+}
+h1 { font-size: clamp(38px,5.2vw,65px); line-height: 1.08; margin: 20px 0; }
+h1 span { color: var(--wine); font-style: italic; }
+.hero p { font: 16px/1.9 Arial, sans-serif; color: #695e58; max-width: 520px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-image {
+  min-height: 430px;
+  position: relative;
+  border-radius: 180px 180px 5px 5px;
+  overflow: hidden;
+  border: 6px solid white;
+  box-shadow: 0 18px 55px #4b30201b;
+}
+.hero-image img { width: 100%; height: 100%; min-height: 430px; object-fit: cover; display: block; }
+.image-note {
+  position: absolute; bottom: 16px; left: 16px; right: 16px;
+  padding: 13px; text-align: center; background: #fffaf2eF;
+  font: 11px Arial, sans-serif; color: #6a3a37;
+}
+.trust {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  background: var(--wine); color: #fff7e8;
+  padding: 27px 7%; text-align: center; gap: 12px;
+}
+.trust strong { display: block; color: #edcb87; font-size: 19px; margin-bottom: 7px; }
+.trust span { font: 12px Arial, sans-serif; }
+section { padding: 75px 7%; }
+.section-heading { text-align: center; max-width: 650px; margin: 0 auto 40px; }
+.section-heading h2 { font-size: clamp(29px,4vw,42px); margin: 12px 0; }
+.section-heading p { color: #746963; font: 14px/1.8 Arial, sans-serif; }
+.services {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
+}
+.service {
+  background: white; border: 1px solid #eee1cf;
+  padding: 30px 24px; border-radius: 5px;
+}
+.service .symbol { font-size: 30px; color: var(--gold); }
+.service h3 { color: var(--wine); font-size: 22px; }
+.service p { color: #756b64; font: 13px/1.8 Arial, sans-serif; }
+.profiles { background: #f5ecdf; }
+.profile-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.profile {
+  background: white; border-radius: 5px; overflow: hidden;
+  box-shadow: 0 5px 20px #49321a0c;
+}
+.profile img { width: 100%; height: 270px; object-fit: cover; display: block; }
+.profile-content { padding: 21px; }
+.profile h3 { color: var(--wine); margin: 0 0 8px; font-size: 21px; }
+.profile p { font: 12px/1.8 Arial, sans-serif; color: #72665f; }
+.tag {
+  display: inline-block; font: 10px Arial, sans-serif;
+  padding: 7px 10px; background: #f7edda; color: #76521c;
+  border-radius: 20px; margin: 3px 3px 3px 0;
+}
+.notice { font: 12px/1.8 Arial, sans-serif; color: #746963; text-align: center; margin-top: 25px; }
+.match-box {
+  max-width: 800px; margin: auto; background: white;
+  padding: clamp(22px,5vw,45px); border: 1px solid #eadbc5;
+  box-shadow: 0 12px 35px #55361a0b;
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+label { display: block; font: 12px Arial, sans-serif; margin-bottom: 8px; color: #65544d; }
+input, select, textarea {
+  width: 100%; padding: 13px; border: 1px solid #ded2c2;
+  background: #fffdf9; border-radius: 3px; outline-color: var(--gold);
+}
+textarea { min-height: 100px; resize: vertical; }
+.field { margin-bottom: 18px; }
+.full { grid-column: 1 / -1; }
+.form-message { font: 12px/1.7 Arial, sans-serif; color: #76675e; margin-top: 15px; }
+.contact {
+  text-align: center; background: var(--wine); color: #fff8ec;
+  padding: 70px 7%;
+}
+.contact h2 { font-size: clamp(30px,4vw,43px); }
+.contact p { font: 14px/1.8 Arial, sans-serif; color: #efddcf; }
+.contact .phone { font-size: 25px; color: #f1cc84; margin: 24px 0; }
+footer {
+  background: #34121d; color: #e8d9d0;
+  padding: 25px 7%; text-align: center; font: 11px/1.9 Arial, sans-serif;
+}
+footer a { text-decoration: underline; }
+@media(max-width:800px) {
+  header { padding: 15px 5%; flex-wrap: wrap; }
+  nav { gap: 12px; flex-wrap: wrap; }
+  nav a { font-size: 11px; }
+  .brand { font-size: 19px; }
+  .hero { grid-template-columns: 1fr; padding: 45px 6%; }
+  .hero-image { min-height: 330px; max-width: 500px; width: 100%; margin: auto; }
+  .hero-image img { min-height: 330px; }
+  .services, .profile-grid { grid-template-columns: 1fr; }
+  .profile { max-width: 500px; width: 100%; margin: auto; }
+  .profile img { height: 320px; }
+  .trust { padding: 25px 4%; }
+  .trust strong { font-size: 15px; }
+  .trust span { font-size: 10px; }
+  section { padding: 55px 6%; }
+}
+@media(max-width:430px) {
+  nav { width: 100%; justify-content: space-between; }
+  nav .btn { padding: 10px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .full { grid-column: auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#home" class="brand">
+    Shiva Leela
+    <small>ELITE MATRIMONY</small>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Our Services</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#enquiry">Enquiry</a>
+    <a class="btn" href="https://wa.me/919880223377?text=Hello%20Shiva%20Leela%20Elite%20Matrimony">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">Personalised matchmaking · Kamma community</div>
+    <h1>Where two hearts<br>find their <span>forever.</span></h1>
+    <p>
+      Welcome to Shiva Leela Elite Matrimony, a personalised
+      matchmaking service for the Kamma community. We help
+      families explore suitable matches across local cities,
+      throughout India, and overseas.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="#enquiry">Find a Match</a>
+      <a class="btn gold" href="https://wa.me/919880223377?text=Hello%2C%20I%20would%20like%20matrimony%20details.">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85"
+      alt="Wedding celebration and romantic wedding atmosphere"
+      onerror="this.style.display='none'">
+    <div class="image-note">Meaningful connections. Beautiful beginnings.</div>
+  </div>
+</section>
+
+<div class="trust">
+  <div><strong>Local</strong><span>Matches in your area</span></div>
+  <div><strong>Pan-India</strong><span>Matches across India</span></div>
+  <div><strong>Worldwide</strong><span>Overseas matchmaking</span></div>
+</div>
+
+<section id="services">
+  <div class="section-heading">
+    <div class="eyebrow">Our matchmaking services</div>
+    <h2>A thoughtful journey to your life partner</h2>
+    <p>Personal attention for individuals and families looking for a compatible life partner.</p>
+  </div>
+  <div class="services">
+    <article class="service">
+      <div class="symbol">✧</div>
+      <h3>Local Matches</h3>
+      <p>Explore suitable Kamma community matches in your town, nearby areas and preferred region.</p>
+    </article>
+    <article class="service">
+      <div class="symbol">◇</div>
+      <h3>Across India</h3>
+      <p>Connect with families in different cities and states, based on your preferences.</p>
+    </article>
+    <article class="service">
+      <div class="symbol">✦</div>
+      <h3>Overseas Matches</h3>
+      <p>Explore suitable matches with South Indian families living abroad, including people of Indian origin.</p>
+    </article>
+  </div>
+</section>
+
+<section class="profiles" id="profiles">
+  <div class="section-heading">
+    <div class="eyebrow">Explore possibilities</div>
+    <h2>Every story begins with a connection</h2>
+    <p>Get in touch to discuss suitable profiles and your family's preferences.</p>
+  </div>
+  <div class="profile-grid">
+    <article class="profile">
+      <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80"
+           alt="Wedding portrait inspiration">
+      <div class="profile-content">
+        <h3>Local Connections</h3>
+        <p>For families seeking a suitable match in their city or nearby locations.</p>
+        <span class="tag">Kamma Community</span>
+        <span class="tag">Local</span>
+      </div>
+    </article>
+    <article class="profile">
+      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+           alt="Wedding celebration inspiration">
+      <div class="profile-content">
+        <h3>Pan-India Connections</h3>
+        <p>For families open to compatible matches from other cities and states.</p>
+        <span class="tag">Kamma Community</span>
+        <span class="tag">Across India</span>
+      </div>
+    </article>
+    <article class="profile">
+      <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80"
+           alt="Elegant wedding inspiration">
+      <div class="profile-content">
+        <h3>Global Connections</h3>
+        <p>For families interested in suitable matches with South Indian roots living abroad.</p>
+        <span class="tag">Kamma Community</span>
+        <span class="tag">Overseas</span>
+      </div>
+    </article>
+  </div>
+  <p class="notice">
+    These are illustrative wedding images, not actual member profiles.
+    No real candidate profiles are displayed on this demo website.
+  </p>
+</section>
+
+<section id="enquiry">
+  <div class="section-heading">
+    <div class="eyebrow">Start your enquiry</div>
+    <h2>Tell us what you are looking for</h2>
+    <p>Fill in the form to prepare a matrimonial enquiry. It will open WhatsApp for you to review and send the details.</p>
+  </div>
+
+  <form class="match-box" id="matchForm">
+    <div class="form-grid">
+      <div class="field">
+        <label for="person">Your name *</label>
+        <input id="person" name="person" required maxlength="80" placeholder="Enter your name">
+      </div>
+      <div class="field">
+        <label for="relation">Enquiry for *</label>
+        <select id="relation" required>
+          <option value="">Select</option>
+          <option>Myself</option>
+          <option>Son</option>
+          <option>Daughter</option>
+          <option>Brother or sister</option>
+          <option>Relative</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="age">Age of prospective match</label>
+        <input id="age" type="number" min="18" max="100" placeholder="Age (18+)">
+      </div>
+      <div class="field">
+        <label for="location">Preferred location *</label>
+        <select id="location" required>
+          <option value="">Choose location</option>
+          <option>Local / Nearby</option>
+          <option>Anywhere in India</option>
+          <option>Overseas</option>
+          <option>Open to all locations</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="preferences">Additional preferences (optional)</label>
+        <textarea id="preferences" maxlength="1000" placeholder="Share relevant preferences. Please avoid entering sensitive identity or financial details."></textarea>
+      </div>
+    </div>
+    <button class="btn" type="submit">Send Enquiry on WhatsApp</button>
+    <p class="form-message">
+      Your form is not stored on this website. After you press the button,
+      WhatsApp opens with a message for you to review before sending.
+      Please share only information you have permission to disclose.
+    </p>
+  </form>
+</section>
+
+<section class="contact">
+  <div class="eyebrow">Personalised service</div>
+  <h2>Let us help you take the first step.</h2>
+  <p>For matchmaking enquiries and further details, contact</p>
+  <h3>Shiva Leela Priya</h3>
+  <div class="phone">+91 98802 23377</div>
+  <a class="btn gold" href="tel:+919880223377">Call Now</a>
+  <a class="btn" href="https://wa.me/919880223377?text=Hello%2C%20I%20am%20interested%20in%20your%20matrimony%20service.">WhatsApp</a>
+</section>
+</main>
+
+<footer>
+  <strong>Shiva Leela Elite Matrimony</strong><br>
+  Personalised matchmaking for the Kamma community · Local, India-wide and overseas enquiries<br>
+  © <span id="year"></span> Shiva Leela Elite Matrimony. All rights reserved.<br>
+  Please verify all candidate details independently. Images shown are illustrative.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("matchForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const person = document.getElementById("person").value.trim();
+  const relation = document.getElementById("relation").value;
+  const age = document.getElementById("age").value;
+  const location = document.getElementById("location").value;
+  const preferences = document.getElementById("preferences").value.trim();
+
+  if (!person || !relation || !location) {
+    alert("Please complete all required fields.");
+    return;
+  }
+
+  const message =
+    "Hello Shiva Leela Elite Matrimony,\n\n" +
+    "I would like to enquire about Kamma community matchmaking.\n" +
+    "Name: " + person + "\n" +
+    "Enquiry for: " + relation + "\n" +
+    "Prospective match age: " + (age || "Not specified") + "\n" +
+    "Preferred location: " + location + "\n" +
+    "Additional preferences: " + (preferences || "Not specified") + "\n\n" +
+    "Please contact me with further details.";
+
+  window.open(
+    "https://wa.me/919880223377?text=" + encodeURIComponent(message),
+    "_blank",
+    "noopener,noreferrer"
+  );
+});
+</script>
+
+</body>
+</html>
